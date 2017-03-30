@@ -1,0 +1,12 @@
+language: java
+before_script: cd 12f_app
+script: mvn clean install
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: sally.yeung@sas.com
+  api: https://api.run.pivotal.io
+  organization: sallyyeung
+  space: development
+  password: 
+    secure: BLyx10iEO+uU2i4S7WGEKVpF4m7y8DDz+VXwrUfRJsoExOkSDhoR7e1woMDdfHiYz7XXYbBE8DjSm8QQsp6gtAf+0qjSUmfuCJi4nbND6dUwpK+kJGWxfbXevGOv/hMjA6PqH8Rrsorg/uEcBK/FVCeUCJ6gUIIebPmrPL41EexLV7p0w6rwV5IFF/xkDHBHrCWeSQFK9Ti9I7bDDwXkP7Y/1WNoOV0IUrSgog2JXN35kHmZ5xFZbzdOXyVOJKqgECTA32/ksG7T8qhc1+UmQEDiTUJnZBBRbrczCJesq1jAXNlaYOit0Oz/8wGvTSdpMQO47xaaeatHPHJQlH7OL0VLcibNRsT17tajec86A1YQNY+N+F1ewBEbsaCL5AAHN2HXSalzFcqBIyeQPpWW6T7wJr/Dm/BJJ9zNlz42sjeeMAAv+YUw5t7Aj+PDV0pGbHWn0gCWrwK3EI+h89JrZYKS+bPN64g7JZpcunxcUfSvpZ8n5J6HNeRj/uo9866S2QEFrw3S4lBlnGAbFxenidZcp2P0tNpcaKPQ96lsvR/dhESrlbu8aqjbOlPQtuxnz8SH+x8LQ/eA2pn900rQoEcGZ9QfPUkYOeCaeJ6ozHwcRBEIF5cefoI5r+c8x0UJo7crSJHWVh9koR0HOYANf8SIkeZvtZ12XMYCLJ4Gn0Y=
